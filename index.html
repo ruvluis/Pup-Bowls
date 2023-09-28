@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Puppy Showcase</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Puppy Showcase</h1>
+    </header>
+    <section id="puppy-form-container">
+        <div id="left-box">
+            <h2>Add a Puppy</h2>
+            <form id="add-puppy-form">
+                <label for="puppy-name">Name:</label>
+                <input type="text" id="puppy-name" required>
+
+                <label for="puppy-breed">Breed:</label>
+                <input type="text" id="puppy-breed" required>
+
+                <label for="puppy-image-url">Image URL:</label>
+                <input type="url" id="puppy-image-url" required>
+
+                <button type="submit">Add Puppy</button>
+            </form>
+        </div>
+    </section>
+    <section id="puppies-list">
+        <!-- Pre-loaded puppies and added puppies will be displayed here -->
+        <!-- Example for a pre-loaded puppy -->
+        <div class="puppy-item">
+            <h3>Name: Puppy Name</h3>
+            <p>Breed: Puppy Breed</p>
+            <img src="puppy-image-url.jpg" alt="Puppy Name">
+            <button class="remove-button">Remove</button>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
